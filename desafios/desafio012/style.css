@@ -9,6 +9,9 @@
     padding: 0%;
 }
     
+html,body{
+    min-height: 100vh;
+}
 header{
     background-color: black;
     color: white;
@@ -17,7 +20,7 @@ header{
 
 header h1{
     font-family: "Passion One", sans-serif;
-    font-size: 60px;}
+    font-size: 10vw;}
 
 header p{
     font-family: Arial, Helvetica, sans-serif;}
