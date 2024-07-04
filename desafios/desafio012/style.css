@@ -32,7 +32,7 @@ main{
     font-size: x-large;
     font-family: "Sriracha", cursive;}
 
-#Principal01 pre{
+#Principal01 p{
     font-family: "Sriracha", cursive;
     margin: 30px;}
 
@@ -44,7 +44,7 @@ main{
     background-attachment: fixed;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.459);}
 
-.Principal02 pre{
+.Principal02 p{
     font-family: "Sriracha", cursive;
     position: absolute;
     color: white;
