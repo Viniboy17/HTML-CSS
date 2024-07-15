@@ -1,99 +1,147 @@
-
-
+/*Typical Device breakpoints
+----------------------------
+Pequenas Telas: até 480px
+Celular: 480px até 768px
+Tablet:  769px até 1279x
+Desktop: 1280px até 1400px
+Grandes Telas: Acima de 1600px
+*/
 @charset "UTF-8";
-
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;}
-
-body{
-    background-color: rgba(69, 184, 199, 0.788);
-    position: relative;
-    width: 100vw;
-    height: 100vh;}
-
-#imagem{
-    height: 250px;
-    background: url(../cll.jpg);
-    background-size: cover;
-    background-position: center center;}
-
-main{
-    width: 300px;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.521);}
-
-#login{
-    padding: 20px;}
-
-#formulario{
-    line-height: 1.5em;}
-
-#formulario>h1{
-    text-align: center;
-    margin-bottom: 10px;}
-
-#formulario>p{
-    text-align: justify;}
-
-
-    form>p{
-        margin: 5px;}
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
     
-    #name{
-        margin-top: 10px;
-        width: 100%;
-        border: 2px solid rgba(69, 184, 199, 0.788);
+    body{
         background-color: rgba(69, 184, 199, 0.788);
-        border-radius: 5px;}
+        position: relative;
+        width: 100vw;
+        height: 100vh;}
     
+    #imagem{
+        display: block;
+        height: 250px;
+        background: url(../cll.jpg);
+        background-size: cover;
+        background-position: center center;}
+    
+    main{
+        width: 300px;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.521);}
+    
+    #login{
+        display: block;
+        padding: 20px;}
+    
+    #formulario{
+        line-height: 1.5em;}
+    
+    #formulario>h1{
+        text-align: center;
+        margin-bottom: 10px;}
+    
+    #formulario>p{
+        text-align: justify;}
+    
+    
+        form>p{
+            margin: 5px;}
+        
+        #name{
+            margin-top: 10px;
+            width: 100%;
+            border: 2px solid rgba(69, 184, 199, 0.788);
+            background-color: rgba(69, 184, 199, 0.788);
+            border-radius: 5px;}
+        
+        #iemail{
+            width: 81%;
+            height: 30px;}
+        
+        #pass{
+            width: 100%;
+            margin-top: 5px;
+            border: 2px solid rgba(69, 184, 199, 0.788);
+            background-color: rgba(69, 184, 199, 0.788);
+            border-radius: 5px;}
+        
+        #isenha{
+            width: 79%;
+            height: 30px;}
+        
+        #entar{
+            width: 100%;
+            background-color: rgb(18, 204, 126);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;}
+        
+        #entar:hover{
+            background-color: rgb(58, 223, 154);
+            text-decoration: underline;
+            color: white;}
+        
+        #esqueci{
+            width: 100%;
+            border: 5px solid rgb(0, 255, 149);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: rgb(5, 177, 105);
+            font-weight: bold;}
+        
+        #esqueci:hover{
+            background-color: rgb(58, 223, 154);
+            text-decoration: underline;
+            color: white;}
+
+@media screen and (min-width:769px) and (max-width:1279px){
+    body{background-image: linear-gradient(rgb(19, 53, 58) ,rgba(69, 184, 199, 0.788));}
+
+    main{width: 90vw;}
+
+    #imagem{
+        width: 30%;
+        height: 292px;
+        background: url(../tablet.jpg);
+        float: left;
+        background-size: cover;}
+
+    #login{
+        width: 70%;
+        float: right;} }
+
+@media screen and (min-width:1280px) and (max-width:1400px){
+    body{background-image: linear-gradient(rgb(19, 53, 58) ,rgba(69, 184, 199, 0.788));}
+
+    main{width: 90vw;}
+
+    #imagem{
+        width: 20%;
+        height: 292px;
+        background: url(../pc.jpg);
+        float: right;
+        background-size: cover;
+        background-position: center center;}
+
+    #login{
+        width: 70%;
+        float: left;}
+
     #iemail{
-        width: 81%;
-        height: 30px;}
-    
-    #pass{
-        width: 100%;
-        margin-top: 5px;
-        border: 2px solid rgba(69, 184, 199, 0.788);
-        background-color: rgba(69, 184, 199, 0.788);
-        border-radius: 5px;}
-    
+        width: 93.5%;}
+
     #isenha{
-        width: 79%;
-        height: 30px;}
-    
-    #entar{
-        width: 100%;
-        background-color: rgb(18, 204, 126);
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        color: white;
-        font-weight: bold;}
-    
-    #entar:hover{
-        background-color: rgb(58, 223, 154);
-        text-decoration: underline;
-        color: white;}
-    
-    #esqueci{
-        width: 100%;
-        border: 5px solid rgb(0, 255, 149);
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        color: rgb(5, 177, 105);
-        font-weight: bold;}
-    
-    #esqueci:hover{
-        background-color: rgb(58, 223, 154);
-        text-decoration: underline;
-        color: white;}
+        width: 93%;}
+}
+            
