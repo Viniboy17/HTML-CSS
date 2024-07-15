@@ -1,10 +1,99 @@
+
+
 @charset "UTF-8";
 
-@media screen and (min-width:667px) and (max-width:1024px){/*tablet*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body{
+    background-color: rgba(69, 184, 199, 0.788);
+    position: relative;
+    width: 100vw;
+    height: 100vh;}
+
+#imagem{
+    height: 250px;
+    background: url(../cll.jpg);
+    background-size: cover;
+    background-position: center center;}
+
+main{
+    width: 300px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.521);}
+
+#login{
+    padding: 20px;}
+
+#formulario{
+    line-height: 1.5em;}
+
+#formulario>h1{
+    text-align: center;
+    margin-bottom: 10px;}
+
+#formulario>p{
+    text-align: justify;}
 
 
-    #main{
-        display: inline-block;
-    }
+    form>p{
+        margin: 5px;}
     
-}
+    #name{
+        margin-top: 10px;
+        width: 100%;
+        border: 2px solid rgba(69, 184, 199, 0.788);
+        background-color: rgba(69, 184, 199, 0.788);
+        border-radius: 5px;}
+    
+    #iemail{
+        width: 81%;
+        height: 30px;}
+    
+    #pass{
+        width: 100%;
+        margin-top: 5px;
+        border: 2px solid rgba(69, 184, 199, 0.788);
+        background-color: rgba(69, 184, 199, 0.788);
+        border-radius: 5px;}
+    
+    #isenha{
+        width: 79%;
+        height: 30px;}
+    
+    #entar{
+        width: 100%;
+        background-color: rgb(18, 204, 126);
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;}
+    
+    #entar:hover{
+        background-color: rgb(58, 223, 154);
+        text-decoration: underline;
+        color: white;}
+    
+    #esqueci{
+        width: 100%;
+        border: 5px solid rgb(0, 255, 149);
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        color: rgb(5, 177, 105);
+        font-weight: bold;}
+    
+    #esqueci:hover{
+        background-color: rgb(58, 223, 154);
+        text-decoration: underline;
+        color: white;}
