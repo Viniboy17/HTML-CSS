@@ -145,6 +145,7 @@ Grandes Telas: Acima de 1600px
         background-position: center center;}
 
     #login{
+        height: 100%;
         margin-top: 4%;
         display: block;
         width: 50%;
