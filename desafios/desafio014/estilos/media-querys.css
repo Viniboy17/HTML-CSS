@@ -42,7 +42,8 @@ Grandes Telas: Acima de 1600px
         padding: 20px;}
     
     #formulario{
-        line-height: 1.5em;}
+        line-height: 1.5em;
+        margin-bottom: 20px;}
     
     #formulario>h1{
         text-align: center;
@@ -54,28 +55,31 @@ Grandes Telas: Acima de 1600px
     
         form>p{
             margin: 5px;}
-        
-        #name{
-            margin-top: 10px;
+
+        .campo{
+            margin: 5px 0px;
             width: 100%;
-            border: 2px solid rgba(69, 184, 199, 0.788);
+            height: 100%;
             background-color: rgba(69, 184, 199, 0.788);
-            border-radius: 5px;}
+            border-radius: 17px;
+        }
+
+        .campo label{
+            display: none;
+        }
+
+        .campo span{
+            height: 40px;
+            width: 40px;
+            padding: 1px 10px 0px 15px;
+        }
         
-        #iemail{
-            width: 81%;
-            height: 30px;}
-        
-        #pass{
-            width: 100%;
-            margin-top: 5px;
-            border: 2px solid rgba(69, 184, 199, 0.788);
-            background-color: rgba(69, 184, 199, 0.788);
-            border-radius: 5px;}
-        
-        #isenha{
-            width: 79%;
-            height: 30px;}
+        .campo input{
+            text-align: center;
+            height: 36px;
+            width: calc(100% - 50px);
+            border-radius: 13px;
+            }
         
         #entar{
             width: 100%;
@@ -108,40 +112,46 @@ Grandes Telas: Acima de 1600px
 @media screen and (min-width:769px) and (max-width:1279px){
     body{background-image: linear-gradient(rgb(19, 53, 58) ,rgba(69, 184, 199, 0.788));}
 
-    main{width: 90vw;}
+    main{width: 90vw;
+        height: 60%;}
 
     #imagem{
         width: 30%;
-        height: 292px;
+        height: 100%;
         background: url(../tablet.jpg);
         float: left;
-        background-size: cover;}
+        background-size: cover;
+        }
 
     #login{
+        margin-top: 50px;
         width: 70%;
         float: right;} }
 
-@media screen and (min-width:1280px) and (max-width:1400px){
+@media screen and (min-width:1280px){
     body{background-image: linear-gradient(rgb(19, 53, 58) ,rgba(69, 184, 199, 0.788));}
 
-    main{width: 90vw;}
+    main{width: 90vw;
+        height: 60%;}
 
     #imagem{
-        width: 20%;
-        height: 292px;
+        width: 40%;
+        height: 100%;
         background: url(../pc.jpg);
         float: right;
         background-size: cover;
         background-position: center center;}
 
     #login{
-        width: 70%;
+        margin-top: 4%;
+        display: block;
+        width: 50%;
         float: left;}
 
     #iemail{
-        width: 93.5%;}
+        }
 
     #isenha{
-        width: 93%;}
+        }
 }
             
