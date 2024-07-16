@@ -43,7 +43,8 @@ Grandes Telas: Acima de 1600px
     
     #formulario{
         line-height: 1.5em;
-        margin-bottom: 20px;}
+        margin-bottom: 20px;
+        }
     
     #formulario>h1{
         text-align: center;
@@ -75,6 +76,7 @@ Grandes Telas: Acima de 1600px
         }
         
         .campo input{
+            border: 1px solid black;
             text-align: center;
             height: 36px;
             width: calc(100% - 50px);
